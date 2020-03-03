@@ -25,7 +25,9 @@ const HeaderNav = ({ clearNav, section }) => {
   const [isOpen, setIsOpen] = useState(false)
   const [dark, setDark] = useState()
 
-  const toggle = () => setIsOpen(!isOpen)
+  const toggle = () => {
+    setIsOpen(!isOpen)
+  }
 
   useEffect(() => {
     const darkBar = clearNav
@@ -135,7 +137,7 @@ const Background = styled.div`
     color: rgb(154, 154, 154);
     font-size: 14px;
     font-weight: 500;
-    line-height: 30px;
+    line-height: 28px;
 
     &:hover {
       color: rgba(177, 186, 194, 0.6);
@@ -145,7 +147,7 @@ const Background = styled.div`
 `
 
 const StyledContainer = styled(Container)`
-  height: 54px;
+  height: 55px;
 
   @media ${device.lg} {
     height: 50px;
@@ -153,7 +155,7 @@ const StyledContainer = styled(Container)`
 `
 
 const StyledNavbar = styled(Navbar)`
-  height: 55px;
+  height: 56px;
   padding: 0 5px 0 13px;
 
   @media ${device.lg} {
@@ -227,11 +229,11 @@ const StyledNavbarBrand = styled(NavbarBrand)`
 
 const StyledCollapse = styled(Collapse)`
   background-color: transparent;
-  border-top: 1px solid #464646;
   height: 100vh;
-  margin: -7px -5px 0 -13px;
-  position: relative;
-  top: 11px;
+  width: 100%;
+  position: absolute;
+  top: 55px;
+  left: 0;
 
   .navbar-nav {
     .nav-link {
@@ -241,6 +243,7 @@ const StyledCollapse = styled(Collapse)`
 
   &.show {
     background-color: #16191c;
+    border-top: 1px solid #464646;
     padding: 10px 25px;
 
     .navbar-nav {
@@ -261,16 +264,12 @@ const StyledCollapse = styled(Collapse)`
     }
   }
 
-  @media ${device.md} {
-    margin: -7px -20px 0 -28px;
-  }
-
   @media ${device.lg} {
     background: transparent;
     border: none;
     height: auto;
     margin: auto;
-    position: unset;
+    position: block;
     top: unset;
 
     .navbar-nav {
