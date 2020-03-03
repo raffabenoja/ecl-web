@@ -5,10 +5,10 @@ import { useStaticQuery, graphql } from "gatsby"
 
 import { Container, Row, Col } from "reactstrap"
 
-import { Footer, Header } from "components"
+import { FooterNav, HeaderNav } from "components"
 import "css/main.scss"
 
-const Layout = ({ children }) => {
+const Layout = ({ clearNav, children }) => {
   const data = useStaticQuery(graphql`
     query SiteTitleQuery {
       site {
@@ -21,19 +21,20 @@ const Layout = ({ children }) => {
 
   return (
     <>
-      <Header siteTitle={data.site.siteMetadata.title} />
+      <HeaderNav siteTitle={data.site.siteMetadata.title} clearNav={clearNav} />
       <Container>
         <Row>
           <Col>{children}</Col>
         </Row>
       </Container>
-      <Footer />
+      <FooterNav />
     </>
   )
 }
 
 Layout.propTypes = {
   children: PropTypes.node.isRequired,
+  clearNav: PropTypes.bool,
 }
 
 export default Layout

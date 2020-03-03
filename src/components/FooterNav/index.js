@@ -1,14 +1,13 @@
-// import { Link } from "gatsby"
-import PropTypes from "prop-types"
 import React from "react"
-
 import styled from "styled-components"
+
+import { Link } from "gatsby"
 import { Container, Row, Col } from "reactstrap"
 
 import { device } from "utils"
 
 // TODO: Added href links
-const Footer = ({ siteTitle }) => (
+const Footer = () => (
   <Background>
     <Container>
       <Row>
@@ -19,20 +18,20 @@ const Footer = ({ siteTitle }) => (
           </Address>
         </Col>
         <Col sm={12} md={4} lg={4}>
-          <a href="#">HOME</a>
+          <Link to="/">HOME</Link>
           <br />
-          <a href="#">HOW THE ECL WORKS</a>
+          <Link to="/">HOW THE ECL WORKS</Link>
           <br />
-          <a href="#">EXPERIMENTAL CAPABILITIES</a>
+          <Link to="/">EXPERIMENTAL CAPABILITIES</Link>
           <br />
-          <a href="#">ABOUT US</a>
+          <Link to="/">ABOUT US</Link>
         </Col>
         <Col sm={12} md={4} lg={4}>
-          <a href="#">CAREERS</a>
+          <Link to="/">CAREERS</Link>
           <br />
-          <a href="#">LEGAL</a>
+          <Link to="/">LEGAL</Link>
           <br />
-          <a href="#">CONTACT US</a>
+          <Link to="/">CONTACT US</Link>
         </Col>
       </Row>
       <Row style={{ marginTop: "55px" }}>
@@ -46,13 +45,9 @@ const Footer = ({ siteTitle }) => (
   </Background>
 )
 
-Footer.propTypes = {
-  siteTitle: PropTypes.string,
-}
+Footer.propTypes = {}
 
-Footer.defaultProps = {
-  siteTitle: ``,
-}
+Footer.defaultProps = {}
 
 export default Footer
 
@@ -68,8 +63,8 @@ const Background = styled.div`
   a {
     color: rgb(154, 154, 154);
     font-size: 14px;
-    line-height: 30px;
     font-weight: 500;
+    line-height: 30px;
 
     &:hover {
       color: rgba(177, 186, 194, 0.6);
@@ -77,6 +72,7 @@ const Background = styled.div`
     }
   }
 `
+
 const Address = styled.address`
   font-size: 14px;
   font-weight: 700;
@@ -85,9 +81,9 @@ const Address = styled.address`
 `
 
 const Copyright = styled.span`
+  color: #76828c;
   font-family: "Ringside Regular";
   font-size: 12px;
   font-weight: 300;
-  color: #76828c;
   margin-top: 55px;
 `

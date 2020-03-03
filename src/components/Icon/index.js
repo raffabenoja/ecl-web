@@ -4,12 +4,12 @@ import * as Icons from "./components"
 
 const validIcons = [
   "Bag",
-  "Cart",
   "CaretDownLarge",
   "CaretLeftLarge",
   "CaretLeftSmall",
   "CaretRightLarge",
   "CaretRightSmall",
+  "Cart",
   "Close",
   "DotsHorizontal",
   "DotsVertical",
