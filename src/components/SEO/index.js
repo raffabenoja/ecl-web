@@ -1,10 +1,3 @@
-/**
- * SEO component that queries for data with
- *  Gatsby's useStaticQuery React hook
- *
- * See: https://www.gatsbyjs.org/docs/use-static-query/
- */
-
 import React from "react"
 import PropTypes from "prop-types"
 import Helmet from "react-helmet"
@@ -26,49 +19,33 @@ function SEO({ description, lang, meta, title }) {
   )
 
   const metaDescription = description || site.siteMetadata.description
-
+  const metaTitle = title || site.siteMetadata.title
   return (
     <Helmet
       htmlAttributes={{
         lang,
       }}
-      title={title}
-      titleTemplate={`%s | ${site.siteMetadata.title}`}
-      meta={[
-        {
-          name: `description`,
-          content: metaDescription,
-        },
-        {
-          property: `og:title`,
-          content: title,
-        },
-        {
-          property: `og:description`,
-          content: metaDescription,
-        },
-        {
-          property: `og:type`,
-          content: `website`,
-        },
-        {
-          name: `twitter:card`,
-          content: `summary`,
-        },
-        {
-          name: `twitter:creator`,
-          content: site.siteMetadata.author,
-        },
-        {
-          name: `twitter:title`,
-          content: title,
-        },
-        {
-          name: `twitter:description`,
-          content: metaDescription,
-        },
-      ].concat(meta)}
-    />
+      titleTemplate={`%s | ${metaTitle}`}
+    >
+      <html lang="en-us" />
+      <title>{title}</title>
+      <meta name="description" content={metaDescription} />
+
+      {/* Twitter */}
+      <meta name="twitter:card" content="summary_large_image" />
+      <meta name="twitter:creator" content="@followthecusp" />
+      <meta name="twitter:domain" content="thecusp.com" />
+      <meta name="twitter:site" content="@followthecusp" />
+      <meta name="twitter:description" content={metaDescription} />
+      {/* <meta name="twitter:image" content={image} /> */}
+      <meta name="twitter:title" content={metaTitle} />
+
+      {/* Open Graph */}
+      <meta property="og:type" content="article" />
+      <meta property="og:description" content={metaDescription} />
+      {/* <meta property="og:image" content={image} /> */}
+      <meta property="og:title" content={metaTitle} />
+    </Helmet>
   )
 }
 
