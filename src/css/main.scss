@@ -9,6 +9,7 @@
 html,
 body {
   height: 100%;
+  font-family: "Ringside Narrow";
 }
 
 #root,
@@ -16,8 +17,4 @@ body {
   display: flex;
   flex-direction: column;
   min-height: 100vh;
-}
-
-div {
-  font-family: "Ringside Narrow";
 }
