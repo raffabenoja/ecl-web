@@ -47,7 +47,7 @@ const HeaderNav = ({ clearNav, section }) => {
       <StyledNavbar
         className="justify-content-between"
         dark={dark ? true : false}
-        expand="md"
+        expand="lg"
         fixed="top"
         isOpen={isOpen}
         light={dark ? false : true}
@@ -229,7 +229,7 @@ const StyledCollapse = styled(Collapse)`
   background-color: transparent;
   border-top: 1px solid #464646;
   height: 100vh;
-  margin: -7px -4px 0 -13px;
+  margin: -7px -5px 0 -13px;
   position: relative;
   top: 11px;
 
@@ -259,6 +259,10 @@ const StyledCollapse = styled(Collapse)`
         border-bottom: none;
       }
     }
+  }
+
+  @media ${device.md} {
+    margin: -7px -20px 0 -28px;
   }
 
   @media ${device.lg} {

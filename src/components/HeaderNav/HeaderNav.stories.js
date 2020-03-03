@@ -49,13 +49,13 @@ export default {
   ],
 }
 
-export const dark = () => (
+export const clearNav = () => (
   <>
     <Background />
     <HeaderNav clearNav={true} section="how-it-works" />
   </>
 )
-export const light = () => <HeaderNav clearNav={false} section="download" />
+export const white = () => <HeaderNav clearNav={false} section="download" />
 
 const Background = styled.div`
   background-color: darkgray;
