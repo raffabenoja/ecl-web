@@ -13,6 +13,7 @@ import theme from "../src/utils/theme"
 import { ThemeProvider } from "styled-components"
 
 import logo from "./logo.png"
+import "../src/css/main.scss"
 
 addDecorator(jsxDecorator)
 addDecorator(withA11y)

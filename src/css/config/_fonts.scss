@@ -1,0 +1,109 @@
+@font-face {
+  font-family: "Ringside Narrow";
+  src: url("../fonts/Ringside/RingsideNarrow-Thin.eot");
+  src: url("../fonts/Ringside/RingsideNarrow-Thin.otf"),
+    url("../fonts/Ringside/RingsideNarrow-Thin.eot?#iefix") format("embedded-opentype"),
+    url("../fonts/Ringside/RingsideNarrow-Thin.ttf") format("truetype"),
+    url("../fonts/Ringside/RingsideNarrow-Thin.woff") format("woff");
+  font-weight: 100;
+}
+
+@font-face {
+  font-family: "Ringside Narrow";
+  src: url("../fonts/Ringside/RingsideNarrow-Light.eot");
+  src: url("../fonts/Ringside/RingsideNarrow-Light.otf"),
+    url("../fonts/Ringside/RingsideNarrow-Light.eot?#iefix") format("embedded-opentype"),
+    url("../fonts/Ringside/RingsideNarrow-Light.ttf") format("truetype"),
+    url("../fonts/Ringside/RingsideNarrow-Light.woff") format("woff");
+  font-weight: 300;
+}
+
+@font-face {
+  font-family: "Ringside Narrow";
+  src: url("../fonts/Ringside/RingsideNarrow-Book.eot");
+  src: url("../fonts/Ringside/RingsideNarrow-Book.otf"),
+    url("../fonts/Ringside/RingsideNarrow-Book.eot?#iefix") format("embedded-opentype"),
+    url("../fonts/Ringside/RingsideNarrow-Book.ttf") format("truetype"),
+    url("../fonts/Ringside/RingsideNarrow-Book.woff") format("woff");
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: "Ringside Narrow";
+  src: url("../fonts/Ringside/RingsideNarrow-Medium.eot");
+  src: url("../fonts/Ringside/RingsideNarrow-Medium.otf"),
+    url("../fonts/Ringside/RingsideNarrow-Medium.eot?#iefix") format("embedded-opentype"),
+    url("../fonts/Ringside/RingsideNarrow-Medium.ttf") format("truetype"),
+    url("../fonts/Ringside/RingsideNarrow-Medium.woff") format("woff");
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: "Ringside Narrow";
+  src: url("../fonts/Ringside/RingsideNarrow-Semibold.eot");
+  src: url("../fonts/Ringside/RingsideNarrow-Semibold.otf"),
+    url("../fonts/Ringside/RingsideNarrow-Semibold.eot?#iefix") format("embedded-opentype"),
+    url("../fonts/Ringside/RingsideNarrow-Semibold.ttf") format("truetype"),
+    url("../fonts/Ringside/RingsideNarrow-Semibold.woff") format("woff");
+  font-weight: 600;
+}
+
+@font-face {
+  font-family: "Ringside Narrow";
+  src: url("../fonts/Ringside/RingsideNarrow-Bold.eot");
+  src: url("../fonts/Ringside/RingsideNarrow-Bold.otf"),
+    url("../fonts/Ringside/RingsideNarrow-Bold.eot?#iefix") format("embedded-opentype"),
+    url("../fonts/Ringside/RingsideNarrow-Bold.ttf") format("truetype"),
+    url("../fonts/Ringside/RingsideNarrow-Bold.woff") format("woff");
+  font-weight: 700;
+}
+
+@font-face {
+  font-family: "Ringside Narrow";
+  src: url("../fonts/Ringside/RingsideNarrow-Black.eot");
+  src: url("../fonts/Ringside/RingsideNarrow-Black.otf"),
+    url("../fonts/Ringside/RingsideNarrow-Black.eot?#iefix") format("embedded-opentype"),
+    url("../fonts/Ringside/RingsideNarrow-Black.ttf") format("truetype"),
+    url("../fonts/Ringside/RingsideNarrow-Black.woff") format("woff");
+  font-weight: 800;
+}
+
+@font-face {
+  font-family: "Ringside Narrow";
+  src: url("../fonts/Ringside/RingsideNarrow-Ultra.eot");
+  src: url("../fonts/Ringside/RingsideNarrow-Ultra.otf"),
+    url("../fonts/Ringside/RingsideNarrow-Ultra.eot?#iefix") format("embedded-opentype"),
+    url("../fonts/Ringside/RingsideNarrow-Ultra.ttf") format("truetype"),
+    url("../fonts/Ringside/RingsideNarrow-Ultra.woff") format("woff");
+  font-weight: 900;
+}
+
+@font-face {
+  font-family: "Ringside Regular";
+  font-weight: 400;
+  src: url("../fonts/Ringside/RingsideRegular-Book.eot");
+  src: url("../fonts/Ringside/RingsideRegular-Book.otf"),
+    url("../fonts/Ringside/RingsideNarrow-Book.eot?#iefix") format("embedded-opentype"),
+    url("../fonts/Ringside/RingsideNarrow-Book.ttf") format("truetype"),
+    url("../fonts/Ringside/RingsideNarrow-Book.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Ringside Regular";
+  font-weight: 500;
+  src: url("../fonts/Ringside/RingsideRegular-Medium.eot");
+  src: url("../fonts/Ringside/RingsideRegular-Medium.otf"),
+    url("../fonts/Ringside/RingsideRegular-Medium.eot?#iefix") format("embedded-opentype"),
+    url("../fonts/Ringside/RingsideRegular-Medium.ttf") format("truetype"),
+    url("../fonts/Ringside/RingsideRegular-Medium.woff") format("woff");
+}
+
+body *,
+p * {
+  -webkit-font-smoothing: antialiased;
+
+  ::selection {
+    background-color: rgba(12, 189, 150, .8);
+    color: #fff;
+  }
+}

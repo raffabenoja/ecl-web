@@ -1,0 +1,20 @@
+// Import all partials
+@import "./config/_normalize.scss";
+@import "./config/_variables.scss";
+@import "./config/_colours.scss";
+@import "./config/_fonts.scss";
+@import "./config/_forms.scss";
+@import "./config/_navbar.scss";
+
+html,
+body {
+  height: 100%;
+  font-family: "Ringside Narrow";
+}
+
+#root,
+#gatsby-focus-wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
