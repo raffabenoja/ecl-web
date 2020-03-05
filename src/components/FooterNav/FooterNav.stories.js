@@ -9,4 +9,4 @@ export default {
   component: FooterNav,
 }
 
-export const Default = () => <FooterNav dark={true} />
+export const Default = () => <FooterNav />

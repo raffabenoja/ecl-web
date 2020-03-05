@@ -1,10 +1,11 @@
-import React from "react"
-import styled from "styled-components"
+import React from 'react';
+import styled from 'styled-components';
 
-import { Link } from "gatsby"
-import { Container, Row, Col } from "reactstrap"
+import { Link } from 'gatsby';
 
-import { device } from "utils"
+import { Container, Row, Col } from 'reactstrap';
+
+import { device } from 'utils';
 
 // TODO: Added href links
 const Footer = () => (
@@ -34,7 +35,7 @@ const Footer = () => (
           <Link to="/">CONTACT US</Link>
         </Col>
       </Row>
-      <Row style={{ marginTop: "55px" }}>
+      <Row style={{ marginTop: '55px' }}>
         <Col sm={12} md={12} lg={12}>
           <Copyright>
             © {new Date().getFullYear()} Emerald Cloud Lab, Inc.
@@ -43,13 +44,13 @@ const Footer = () => (
       </Row>
     </Container>
   </Background>
-)
+);
 
-Footer.propTypes = {}
+Footer.propTypes = {};
 
-Footer.defaultProps = {}
+Footer.defaultProps = {};
 
-export default Footer
+export default Footer;
 
 const Background = styled.div`
   background-color: #16191c;
@@ -71,19 +72,19 @@ const Background = styled.div`
       text-decoration: none;
     }
   }
-`
+`;
 
 const Address = styled.address`
   font-size: 14px;
   font-weight: 700;
   line-height: 22px;
   margin-bottom: 50px;
-`
+`;
 
 const Copyright = styled.span`
   color: #76828c;
-  font-family: "Ringside Regular";
+  font-family: 'Ringside Regular';
   font-size: 12px;
   font-weight: 300;
   margin-top: 55px;
-`
+`;

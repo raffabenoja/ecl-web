@@ -2,7 +2,7 @@ import React from "react"
 import styled from "styled-components"
 import { Link } from "gatsby"
 
-import { Layout, Image, SEO } from "components"
+import { Layout, Image, SEO, VimeoPlayer } from "components"
 
 const IndexPage = () => (
   <>
@@ -15,6 +15,7 @@ const IndexPage = () => (
       <div style={{ maxWidth: `300px`, marginBottom: `1.45rem` }}>
         <Image />
       </div>
+      <VimeoPlayer src="https://player.vimeo.com/video/320831261" />
       <div style={{ height: "1000px" }} />
       <Link to="/page-2/">Go to page 2</Link>
     </Layout>
